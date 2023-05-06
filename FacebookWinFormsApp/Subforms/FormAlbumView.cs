@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace BasicFacebookFeatures.Subforms
@@ -23,14 +24,16 @@ namespace BasicFacebookFeatures.Subforms
 
         private void OnShown(Object sender, EventArgs e)
         {
-            r_AlbumManager.fetchAlbums(listBoxAlbumsShow);
+           new Thread(() => { r_AlbumManager.fetchAlbums(listBoxAlbumsShow); }).Start();
         }
 
         private void listBoxAlbumsShow_SelectedIndexChanged(object sender, EventArgs e)
         {
             r_AlbumManager.presentAlbumImages(listBoxAlbumsShow, pictureBoxAlbum);
-            r_AlbumManager.fetchPictures(listBoxImageAlbum, listBoxAlbumsShow);
-            pictureBoxPicture.Image = null; 
+
+            new Thread(() => { r_AlbumManager.fetchPictures(listBoxImageAlbum, listBoxAlbumsShow); }).Start();
+            pictureBoxPicture.Image = null;
+         
         }
 
         private void listBoxImageAlbum_SelectedIndexChanged(object sender, EventArgs e)

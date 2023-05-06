@@ -40,28 +40,31 @@
             // listBoxSelectedFromAlbum
             // 
             this.listBoxSelectedFromAlbum.FormattingEnabled = true;
-            this.listBoxSelectedFromAlbum.ItemHeight = 20;
-            this.listBoxSelectedFromAlbum.Location = new System.Drawing.Point(26, 32);
+            this.listBoxSelectedFromAlbum.ItemHeight = 16;
+            this.listBoxSelectedFromAlbum.Location = new System.Drawing.Point(23, 26);
+            this.listBoxSelectedFromAlbum.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.listBoxSelectedFromAlbum.Name = "listBoxSelectedFromAlbum";
-            this.listBoxSelectedFromAlbum.Size = new System.Drawing.Size(125, 184);
+            this.listBoxSelectedFromAlbum.Size = new System.Drawing.Size(112, 148);
             this.listBoxSelectedFromAlbum.TabIndex = 0;
             this.listBoxSelectedFromAlbum.SelectedIndexChanged += new System.EventHandler(this.listBoxFromAlbum_SelectedIndexChanged);
             // 
             // listBoxSelectedPicture
             // 
             this.listBoxSelectedPicture.FormattingEnabled = true;
-            this.listBoxSelectedPicture.ItemHeight = 20;
-            this.listBoxSelectedPicture.Location = new System.Drawing.Point(225, 32);
+            this.listBoxSelectedPicture.ItemHeight = 16;
+            this.listBoxSelectedPicture.Location = new System.Drawing.Point(200, 26);
+            this.listBoxSelectedPicture.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.listBoxSelectedPicture.Name = "listBoxSelectedPicture";
-            this.listBoxSelectedPicture.Size = new System.Drawing.Size(125, 184);
+            this.listBoxSelectedPicture.Size = new System.Drawing.Size(112, 148);
             this.listBoxSelectedPicture.TabIndex = 1;
             this.listBoxSelectedPicture.SelectedIndexChanged += new System.EventHandler(this.listBoxSelectedPicture_SelectedIndexChanged);
             // 
             // pictureBoxShowAlbumPictureAdd
             // 
-            this.pictureBoxShowAlbumPictureAdd.Location = new System.Drawing.Point(82, 248);
+            this.pictureBoxShowAlbumPictureAdd.Location = new System.Drawing.Point(73, 198);
+            this.pictureBoxShowAlbumPictureAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBoxShowAlbumPictureAdd.Name = "pictureBoxShowAlbumPictureAdd";
-            this.pictureBoxShowAlbumPictureAdd.Size = new System.Drawing.Size(211, 184);
+            this.pictureBoxShowAlbumPictureAdd.Size = new System.Drawing.Size(188, 147);
             this.pictureBoxShowAlbumPictureAdd.TabIndex = 2;
             this.pictureBoxShowAlbumPictureAdd.TabStop = false;
             // 
@@ -69,35 +72,39 @@
             // 
             this.ListBoxSelectedToAlbum.Enabled = false;
             this.ListBoxSelectedToAlbum.FormattingEnabled = true;
-            this.ListBoxSelectedToAlbum.ItemHeight = 20;
-            this.ListBoxSelectedToAlbum.Location = new System.Drawing.Point(419, 32);
+            this.ListBoxSelectedToAlbum.ItemHeight = 16;
+            this.ListBoxSelectedToAlbum.Location = new System.Drawing.Point(372, 26);
+            this.ListBoxSelectedToAlbum.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ListBoxSelectedToAlbum.Name = "ListBoxSelectedToAlbum";
-            this.ListBoxSelectedToAlbum.Size = new System.Drawing.Size(125, 184);
+            this.ListBoxSelectedToAlbum.Size = new System.Drawing.Size(112, 148);
             this.ListBoxSelectedToAlbum.TabIndex = 5;
+            this.ListBoxSelectedToAlbum.SelectedIndexChanged += new System.EventHandler(this.ListBoxSelectedToAlbum_SelectedIndexChanged);
             // 
             // buttonAddPictureTo
             // 
             this.buttonAddPictureTo.Enabled = false;
-            this.buttonAddPictureTo.Location = new System.Drawing.Point(419, 248);
+            this.buttonAddPictureTo.Location = new System.Drawing.Point(372, 198);
+            this.buttonAddPictureTo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonAddPictureTo.Name = "buttonAddPictureTo";
-            this.buttonAddPictureTo.Size = new System.Drawing.Size(125, 51);
+            this.buttonAddPictureTo.Size = new System.Drawing.Size(111, 41);
             this.buttonAddPictureTo.TabIndex = 6;
             this.buttonAddPictureTo.Text = "Add Picture";
             this.buttonAddPictureTo.UseVisualStyleBackColor = true;
             this.buttonAddPictureTo.Click += new System.EventHandler(this.buttonAddPictureTo_Click);
             // 
-            // FormAddPicture
+            // FormAlbumCrosspost
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(585, 450);
+            this.ClientSize = new System.Drawing.Size(520, 360);
             this.Controls.Add(this.buttonAddPictureTo);
             this.Controls.Add(this.ListBoxSelectedToAlbum);
             this.Controls.Add(this.pictureBoxShowAlbumPictureAdd);
             this.Controls.Add(this.listBoxSelectedPicture);
             this.Controls.Add(this.listBoxSelectedFromAlbum);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "FormAddPicture";
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Name = "FormAlbumCrosspost";
             this.Text = "Facebook - Add Picture";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxShowAlbumPictureAdd)).EndInit();
             this.ResumeLayout(false);

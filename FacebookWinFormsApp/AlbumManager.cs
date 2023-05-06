@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using FacebookWrapper.ObjectModel;
@@ -29,11 +30,11 @@ namespace BasicFacebookFeatures
 
         public void fetchAlbums(ListBox listBoxAlbumShow)
         {
-            listBoxAlbumShow.Items.Clear();
-            listBoxAlbumShow.DisplayMember = "Name";
+            listBoxAlbumShow.Invoke(new Action(() => listBoxAlbumShow.Items.Clear()));
+            listBoxAlbumShow.Invoke(new Action(() => listBoxAlbumShow.DisplayMember = "Name"));
             foreach (Album album in r_User.Albums)
             {
-                listBoxAlbumShow.Items.Add(album);
+                listBoxAlbumShow.Invoke(new Action(() => listBoxAlbumShow.Items.Add(album)));
                 album.ReFetch(DynamicWrapper.eLoadOptions.Full);
             }
 
@@ -55,6 +56,7 @@ namespace BasicFacebookFeatures
                 {
                     pictureBoxAlbum.Image = pictureBoxAlbum.ErrorImage;
                 }
+
             }
 
         }
@@ -63,20 +65,22 @@ namespace BasicFacebookFeatures
         public void fetchPictures(ListBox i_ListBoxPicturesShow, ListBox i_ListBoxAlbumsShow)
         {
             try
-            {
-                i_ListBoxPicturesShow.Items.Clear();
-                i_ListBoxPicturesShow.DisplayMember = "Name";
-                Album selectedAlbum = i_ListBoxAlbumsShow.SelectedItem as Album;
-                FacebookObjectCollection<Photo> selectedAlbumPictures = selectedAlbum.Photos;
-                foreach (Photo picture in selectedAlbumPictures)
-                {
-                    i_ListBoxPicturesShow.Items.Add(picture.PictureAlbumURL);
+            {   
+                i_ListBoxPicturesShow.Invoke(new Action(() => i_ListBoxPicturesShow.Items.Clear()));
+                i_ListBoxPicturesShow.Invoke(new Action(() => i_ListBoxPicturesShow.DisplayMember = "Name"));
+                Album selectedAlbum = (Album)i_ListBoxAlbumsShow.Invoke(new Func<Album>(() => (Album)i_ListBoxAlbumsShow.SelectedItem));
+                if (selectedAlbum != null) {
+                    FacebookObjectCollection<Photo> selectedAlbumPictures = selectedAlbum?.Photos;
+                    foreach (Photo picture in selectedAlbumPictures)
+                    {
+                        i_ListBoxPicturesShow.Invoke(new Action(() => i_ListBoxPicturesShow.Items.Add(picture.PictureAlbumURL)));
 
+                    }
                 }
-
-                if (i_ListBoxPicturesShow.Items.Count == 0)
+                int check = (int)i_ListBoxPicturesShow.Invoke(new Func<int>(() => i_ListBoxPicturesShow.Items.Count));
+                if(check == 0)
                 {
-                    MessageBox.Show("No Albums to retrieve");
+                    MessageBox.Show("No Pictures to retrieve");
                 }
             }
             catch(Exception ex)
