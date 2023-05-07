@@ -37,107 +37,137 @@
             this.buttonAlbumPhotos = new System.Windows.Forms.Button();
             this.buttonLikedPages = new System.Windows.Forms.Button();
             this.buttonSwapAlbumPictures = new System.Windows.Forms.Button();
+            this.switchStyle = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonLogin
             // 
+            this.buttonLogin.BackColor = System.Drawing.Color.White;
+            this.buttonLogin.ForeColor = System.Drawing.Color.Black;
             this.buttonLogin.Location = new System.Drawing.Point(12, 14);
             this.buttonLogin.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonLogin.Name = "buttonLogin";
             this.buttonLogin.Size = new System.Drawing.Size(268, 35);
             this.buttonLogin.TabIndex = 36;
             this.buttonLogin.Text = "Login";
-            this.buttonLogin.UseVisualStyleBackColor = true;
+            this.buttonLogin.UseVisualStyleBackColor = false;
             this.buttonLogin.Click += new System.EventHandler(this.buttonLogin_Click);
             // 
             // buttonLogout
             // 
+            this.buttonLogout.BackColor = System.Drawing.Color.White;
             this.buttonLogout.Enabled = false;
+            this.buttonLogout.ForeColor = System.Drawing.Color.Black;
             this.buttonLogout.Location = new System.Drawing.Point(309, 14);
             this.buttonLogout.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonLogout.Name = "buttonLogout";
             this.buttonLogout.Size = new System.Drawing.Size(268, 35);
             this.buttonLogout.TabIndex = 52;
             this.buttonLogout.Text = "Logout";
-            this.buttonLogout.UseVisualStyleBackColor = true;
+            this.buttonLogout.UseVisualStyleBackColor = false;
             this.buttonLogout.Click += new System.EventHandler(this.buttonLogout_Click);
             // 
             // buttonUserDetails
             // 
+            this.buttonUserDetails.BackColor = System.Drawing.Color.White;
             this.buttonUserDetails.Enabled = false;
+            this.buttonUserDetails.ForeColor = System.Drawing.Color.Black;
             this.buttonUserDetails.Location = new System.Drawing.Point(12, 99);
             this.buttonUserDetails.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonUserDetails.Name = "buttonUserDetails";
             this.buttonUserDetails.Size = new System.Drawing.Size(268, 35);
             this.buttonUserDetails.TabIndex = 59;
             this.buttonUserDetails.Text = "User Details";
-            this.buttonUserDetails.UseVisualStyleBackColor = true;
+            this.buttonUserDetails.UseVisualStyleBackColor = false;
             this.buttonUserDetails.Click += new System.EventHandler(this.buttonUserDetails_Click);
             // 
             // buttonGroups
             // 
+            this.buttonGroups.BackColor = System.Drawing.Color.White;
             this.buttonGroups.Enabled = false;
+            this.buttonGroups.ForeColor = System.Drawing.Color.Black;
             this.buttonGroups.Location = new System.Drawing.Point(12, 159);
             this.buttonGroups.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonGroups.Name = "buttonGroups";
             this.buttonGroups.Size = new System.Drawing.Size(268, 35);
             this.buttonGroups.TabIndex = 60;
             this.buttonGroups.Text = "View Groups";
-            this.buttonGroups.UseVisualStyleBackColor = true;
+            this.buttonGroups.UseVisualStyleBackColor = false;
             this.buttonGroups.Click += new System.EventHandler(this.buttonGroups_Click);
             // 
             // buttonCrossPost
             // 
+            this.buttonCrossPost.BackColor = System.Drawing.Color.White;
             this.buttonCrossPost.Enabled = false;
+            this.buttonCrossPost.ForeColor = System.Drawing.Color.Black;
             this.buttonCrossPost.Location = new System.Drawing.Point(309, 159);
             this.buttonCrossPost.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonCrossPost.Name = "buttonCrossPost";
             this.buttonCrossPost.Size = new System.Drawing.Size(268, 35);
             this.buttonCrossPost.TabIndex = 61;
             this.buttonCrossPost.Text = "Cross Post Between Groups";
-            this.buttonCrossPost.UseVisualStyleBackColor = true;
+            this.buttonCrossPost.UseVisualStyleBackColor = false;
             this.buttonCrossPost.Click += new System.EventHandler(this.buttonCrossPost_Click);
             // 
             // buttonAlbumPhotos
             // 
+            this.buttonAlbumPhotos.BackColor = System.Drawing.Color.White;
             this.buttonAlbumPhotos.Enabled = false;
+            this.buttonAlbumPhotos.ForeColor = System.Drawing.Color.Black;
             this.buttonAlbumPhotos.Location = new System.Drawing.Point(13, 222);
             this.buttonAlbumPhotos.Name = "buttonAlbumPhotos";
             this.buttonAlbumPhotos.Size = new System.Drawing.Size(268, 35);
             this.buttonAlbumPhotos.TabIndex = 63;
             this.buttonAlbumPhotos.Text = "View Albums";
-            this.buttonAlbumPhotos.UseVisualStyleBackColor = true;
+            this.buttonAlbumPhotos.UseVisualStyleBackColor = false;
             this.buttonAlbumPhotos.Click += new System.EventHandler(this.AlbumsButtonView_Click);
             // 
             // buttonLikedPages
             // 
+            this.buttonLikedPages.BackColor = System.Drawing.Color.White;
             this.buttonLikedPages.Enabled = false;
+            this.buttonLikedPages.ForeColor = System.Drawing.Color.Black;
             this.buttonLikedPages.Location = new System.Drawing.Point(309, 99);
             this.buttonLikedPages.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonLikedPages.Name = "buttonLikedPages";
             this.buttonLikedPages.Size = new System.Drawing.Size(268, 35);
             this.buttonLikedPages.TabIndex = 64;
             this.buttonLikedPages.Text = "Liked Pages";
-            this.buttonLikedPages.UseVisualStyleBackColor = true;
+            this.buttonLikedPages.UseVisualStyleBackColor = false;
             this.buttonLikedPages.Click += new System.EventHandler(this.buttonLikedPages_Click);
             // 
             // buttonSwapAlbumPictures
             // 
+            this.buttonSwapAlbumPictures.BackColor = System.Drawing.Color.White;
             this.buttonSwapAlbumPictures.Enabled = false;
+            this.buttonSwapAlbumPictures.ForeColor = System.Drawing.Color.Black;
             this.buttonSwapAlbumPictures.Location = new System.Drawing.Point(309, 222);
             this.buttonSwapAlbumPictures.Name = "buttonSwapAlbumPictures";
             this.buttonSwapAlbumPictures.Size = new System.Drawing.Size(268, 35);
             this.buttonSwapAlbumPictures.TabIndex = 65;
             this.buttonSwapAlbumPictures.Text = "Cross Post Between Albums";
-            this.buttonSwapAlbumPictures.UseVisualStyleBackColor = true;
+            this.buttonSwapAlbumPictures.UseVisualStyleBackColor = false;
             this.buttonSwapAlbumPictures.Click += new System.EventHandler(this.buttonSwapAlbumPictures_Click);
+            // 
+            // switchStyle
+            // 
+            this.switchStyle.BackColor = System.Drawing.Color.White;
+            this.switchStyle.Enabled = false;
+            this.switchStyle.ForeColor = System.Drawing.Color.Black;
+            this.switchStyle.Location = new System.Drawing.Point(161, 301);
+            this.switchStyle.Name = "switchStyle";
+            this.switchStyle.Size = new System.Drawing.Size(268, 35);
+            this.switchStyle.TabIndex = 66;
+            this.switchStyle.Text = "Switch Day/Night mode";
+            this.switchStyle.UseVisualStyleBackColor = false;
+            this.switchStyle.Click += new System.EventHandler(this.switchStyle_Click);
             // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(611, 283);
+            this.ClientSize = new System.Drawing.Size(609, 380);
+            this.Controls.Add(this.switchStyle);
             this.Controls.Add(this.buttonSwapAlbumPictures);
             this.Controls.Add(this.buttonLikedPages);
             this.Controls.Add(this.buttonAlbumPhotos);
@@ -167,6 +197,7 @@
         private System.Windows.Forms.Button buttonAlbumPhotos;
         private System.Windows.Forms.Button buttonLikedPages;
         private System.Windows.Forms.Button buttonSwapAlbumPictures;
+        private System.Windows.Forms.Button switchStyle;
     }
 }
 

@@ -1,18 +1,18 @@
 ﻿using System;
+using System.Threading;
 using System.Windows.Forms;
 using FacebookWrapper.ObjectModel;
 
 
 namespace BasicFacebookFeatures.Subforms
 {
-    public partial class FormGroupView : Form
+    public partial class FormGroupView : FormWithSettingsProxy
     {
-        private readonly UserSession r_Session;
+        private readonly UserSession r_Session = UserSession.getInstance();
         private Group m_SelectedGroup;
         private readonly GroupManager r_GroupManager;
-        public FormGroupView(UserSession i_Session)
+        public FormGroupView()
         {
-            r_Session = i_Session;
             r_GroupManager = new GroupManager(r_Session.User);
             r_GroupManager.ErrorCallbacks += notAdminError;
             InitializeComponent();
@@ -20,7 +20,7 @@ namespace BasicFacebookFeatures.Subforms
         }
         private void OnShown(object sender, EventArgs e)
         {
-            r_GroupManager.FetchUserGroupsToListBox(listBoxGroups);
+            new Thread(() => r_GroupManager.FetchUserGroupsToListBox(listBoxGroups)).Start();
         }
         
         private void listBoxGroups_SelectedIndexChanged(object sender, EventArgs e)

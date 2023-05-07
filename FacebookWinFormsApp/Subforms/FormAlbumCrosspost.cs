@@ -3,22 +3,17 @@ using System.Windows.Forms;
 
 namespace BasicFacebookFeatures.Subforms
 {
-    public partial class FormAlbumCrosspost : Form
+    public partial class FormAlbumCrosspost : FormWithSettingsProxy
     {
-        private readonly UserSession r_UserSession;
+        private readonly UserSession r_UserSession = UserSession.getInstance();
         private readonly AlbumManager r_AlbumManager;
 
         public FormAlbumCrosspost()
         {
-            InitializeComponent();
-        }
-
-        public FormAlbumCrosspost(UserSession i_UserSession)
-        {
-            this.r_UserSession = i_UserSession;
-            this.r_AlbumManager = new AlbumManager(i_UserSession.User);
+            this.r_AlbumManager = new AlbumManager(r_UserSession.User);
             InitializeComponent();
             this.Shown += OnShown;
+
         }
 
         public void OnShown(Object sender, EventArgs e)

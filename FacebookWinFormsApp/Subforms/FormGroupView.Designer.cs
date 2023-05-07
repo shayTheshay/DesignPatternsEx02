@@ -37,6 +37,8 @@
             // 
             // listBoxGroups
             // 
+            this.listBoxGroups.BackColor = System.Drawing.Color.White;
+            this.listBoxGroups.ForeColor = System.Drawing.Color.Black;
             this.listBoxGroups.FormattingEnabled = true;
             this.listBoxGroups.ItemHeight = 20;
             this.listBoxGroups.Location = new System.Drawing.Point(21, 22);
@@ -47,6 +49,8 @@
             // 
             // textBoxStatus
             // 
+            this.textBoxStatus.BackColor = System.Drawing.Color.White;
+            this.textBoxStatus.ForeColor = System.Drawing.Color.Black;
             this.textBoxStatus.Location = new System.Drawing.Point(241, 22);
             this.textBoxStatus.Name = "textBoxStatus";
             this.textBoxStatus.Size = new System.Drawing.Size(221, 26);
@@ -54,16 +58,20 @@
             // 
             // buttonPost
             // 
+            this.buttonPost.BackColor = System.Drawing.Color.White;
+            this.buttonPost.ForeColor = System.Drawing.Color.Black;
             this.buttonPost.Location = new System.Drawing.Point(257, 54);
             this.buttonPost.Name = "buttonPost";
             this.buttonPost.Size = new System.Drawing.Size(179, 35);
             this.buttonPost.TabIndex = 2;
             this.buttonPost.Text = "Post to selected group";
-            this.buttonPost.UseVisualStyleBackColor = true;
+            this.buttonPost.UseVisualStyleBackColor = false;
             this.buttonPost.Click += new System.EventHandler(this.buttonPost_Click);
             // 
             // listBoxStatuses
             // 
+            this.listBoxStatuses.BackColor = System.Drawing.Color.White;
+            this.listBoxStatuses.ForeColor = System.Drawing.Color.Black;
             this.listBoxStatuses.FormattingEnabled = true;
             this.listBoxStatuses.ItemHeight = 20;
             this.listBoxStatuses.Location = new System.Drawing.Point(241, 102);
@@ -71,7 +79,7 @@
             this.listBoxStatuses.Size = new System.Drawing.Size(224, 144);
             this.listBoxStatuses.TabIndex = 3;
             // 
-            // FormGroups
+            // FormGroupView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -81,7 +89,7 @@
             this.Controls.Add(this.textBoxStatus);
             this.Controls.Add(this.listBoxGroups);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "FormGroups";
+            this.Name = "FormGroupView";
             this.Text = "Facebook - Groups";
             this.ResumeLayout(false);
             this.PerformLayout();

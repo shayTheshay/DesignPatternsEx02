@@ -1,19 +1,19 @@
 ﻿using System;
+using System.Threading;
 using System.Windows.Forms;
 using FacebookWrapper.ObjectModel;
 
 namespace BasicFacebookFeatures.Subforms
 {
-    public partial class FormGroupCrossPost : Form
+    public partial class FormGroupCrossPost : FormWithSettingsProxy
     {
-        private readonly UserSession r_Session;
+        private readonly UserSession r_Session = UserSession.getInstance();
         private Group m_SelectedGroupFrom;
         private Group m_SelectedGroupTo;
         private String m_SelectedPost;
         private readonly GroupManager r_GroupManager;
-        public FormGroupCrossPost(UserSession i_Session)
+        public FormGroupCrossPost()
         {
-            r_Session = i_Session; 
             r_GroupManager = new GroupManager(r_Session.User);
             r_GroupManager.ErrorCallbacks += notAdminError;
             InitializeComponent(); 
@@ -22,7 +22,8 @@ namespace BasicFacebookFeatures.Subforms
 
         private void OnShown(object sender, EventArgs e)
         {
-            r_GroupManager.FetchUserGroupsToListBox(listBoxGroupsFrom);
+           // new Thread(() => r_GroupManager.FetchUserGroupsToListBox(listBoxGroupsFrom)).Start();
+           // listBoxGroupsFrom.Invoke(new Action(() => r_GroupManager.FetchUserGroupsToListBox(listBoxGroupsFrom)));
             listBoxGroupsTo.Items.AddRange(listBoxGroupsFrom.Items);
         }
 

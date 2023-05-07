@@ -4,13 +4,12 @@ using FacebookWrapper.ObjectModel;
 
 namespace BasicFacebookFeatures.Subforms
 {
-    public partial class FormUserDetails : Form
+    public partial class FormUserDetails : FormWithSettingsProxy
     {
-        private readonly UserSession r_Session;
+        private readonly UserSession r_Session = UserSession.getInstance() ;
 
-        public FormUserDetails(UserSession i_Session)
+        public FormUserDetails()
         {
-            r_Session = i_Session;
             InitializeComponent();
             this.Shown += OnShown;
         }

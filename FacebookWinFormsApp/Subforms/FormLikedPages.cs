@@ -1,23 +1,24 @@
 ﻿using System;
+using System.Threading;
 using System.Windows.Forms;
 using FacebookWrapper.ObjectModel;
 
 namespace BasicFacebookFeatures.Subforms
 {
-    public partial class FormLikedPages : Form
+    public partial class FormLikedPages : FormWithSettingsProxy
     {
-        private readonly UserSession r_Session;
+        private readonly UserSession r_Session = UserSession.getInstance();
         private Page m_ChosenPage;
 
-        public FormLikedPages(UserSession i_Session)
+        public FormLikedPages()
         {
-            r_Session = i_Session;
             InitializeComponent();
             this.Shown += OnShown;
         }
+
         private void OnShown(object sender, EventArgs e)
         {
-            fetchLikedPages();
+            new Thread(this.fetchLikedPages).Start();
         }
 
         private void fetchLikedPages()

@@ -1,29 +1,24 @@
 ﻿using System;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace BasicFacebookFeatures.Subforms
 {
-    public partial class FormAlbumView : Form
+    public partial class FormAlbumView : FormWithSettingsProxy
     {
-        private readonly UserSession r_UserSession;
+        private readonly UserSession r_UserSession = UserSession.getInstance();
         private readonly AlbumManager r_AlbumManager;
 
         public FormAlbumView()
         {
-            InitializeComponent();
-        }
-
-        public FormAlbumView(UserSession i_UserSession)
-        {
-            this.r_UserSession = i_UserSession;
-            this.r_AlbumManager = new AlbumManager(i_UserSession.User);
+            this.r_AlbumManager = new AlbumManager(r_UserSession.User);
             InitializeComponent();
             this.Shown += OnShown;
         }
 
         private void OnShown(Object sender, EventArgs e)
         {
-            r_AlbumManager.fetchAlbums(listBoxAlbumsShow);
+            new Thread(() => r_AlbumManager.fetchAlbums(listBoxAlbumsShow)).Start();
         }
 
         private void listBoxAlbumsShow_SelectedIndexChanged(object sender, EventArgs e)
