@@ -24,8 +24,10 @@ namespace BasicFacebookFeatures.Subforms
         private void listBoxAlbumsShow_SelectedIndexChanged(object sender, EventArgs e)
         {
             r_AlbumManager.presentAlbumImages(listBoxAlbumsShow, pictureBoxAlbum);
-            r_AlbumManager.fetchPictures(listBoxImageAlbum, listBoxAlbumsShow);
-            pictureBoxPicture.Image = null; 
+
+            new Thread(() => { r_AlbumManager.fetchPictures(listBoxImageAlbum, listBoxAlbumsShow); }).Start();
+            pictureBoxPicture.Image = null;
+         
         }
 
         private void listBoxImageAlbum_SelectedIndexChanged(object sender, EventArgs e)
