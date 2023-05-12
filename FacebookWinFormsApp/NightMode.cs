@@ -11,12 +11,12 @@ namespace BasicFacebookFeatures
     {
         public Color BackgroundColor()
         {
-            return Color.Black;
+            return Color.DimGray;
         }
 
         public Color ButtonColor()
         {
-            return Color.Black;
+            return Color.DarkGray;
         }
 
         public Color TextColor()

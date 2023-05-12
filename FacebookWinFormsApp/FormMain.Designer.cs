@@ -164,9 +164,9 @@
             // 
             // FormMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(609, 380);
+            this.ClientSize = new System.Drawing.Size(642, 392);
             this.Controls.Add(this.switchStyle);
             this.Controls.Add(this.buttonSwapAlbumPictures);
             this.Controls.Add(this.buttonLikedPages);

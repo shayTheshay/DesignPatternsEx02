@@ -147,6 +147,9 @@
     <EmbeddedResource Include="FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormWithSettingsProxy.resx">
+      <DependentUpon>FormWithSettingsProxy.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -176,6 +179,8 @@
       <DependentUpon>FormAlbumView.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="ClassDiagram1.cd" />
+    <None Include="FacebookWrapper.ObjectModel.City.datasource" />
+    <None Include="FacebookWrapper.ObjectModel.User2.datasource" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

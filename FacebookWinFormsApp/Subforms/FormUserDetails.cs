@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 using System.Windows.Forms;
 using FacebookWrapper.ObjectModel;
 
@@ -21,15 +22,13 @@ namespace BasicFacebookFeatures.Subforms
 
         private void fetchAndDisplayUserInfo()
         {
-            labelUserName.Text = r_Session.User.Name + "!";
-            labelBirthday.Text = r_Session.User.Birthday;
             labelAge.Text = getAge().ToString();
-            labelEmail.Text = r_Session.User.Email;
             labelGender.Text = r_Session.User.Gender.ToString();
             labelFriendCount.Text = r_Session.User.Friends.Count.ToString();
             labelRelashionship.Text = r_Session.User.RelationshipStatus.ToString();
-            pictureBoxProfile.LoadAsync(r_Session.User.PictureNormalURL);
-            labelLocation.Text = r_Session.User.Location.Name;
+
+            userBindingSource.DataSource =  r_Session.User;
+            cityBindingSource.DataSource = r_Session.User.Location;
         }
 
         private int getAge()

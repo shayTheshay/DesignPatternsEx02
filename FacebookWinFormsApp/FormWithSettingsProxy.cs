@@ -35,5 +35,16 @@ namespace BasicFacebookFeatures
             }
         }
 
+        private void InitializeComponent()
+        {
+            this.SuspendLayout();
+            // 
+            // FormWithSettingsProxy
+            // 
+            this.ClientSize = new System.Drawing.Size(282, 253);
+            this.Name = "FormWithSettingsProxy";
+            this.ResumeLayout(false);
+
+        }
     }
 }

@@ -36,32 +36,39 @@ namespace BasicFacebookFeatures.Subforms
             // 
             // buttonShareYourLove
             // 
-            this.buttonShareYourLove.Location = new System.Drawing.Point(248, 126);
+            this.buttonShareYourLove.BackColor = System.Drawing.Color.White;
+            this.buttonShareYourLove.ForeColor = System.Drawing.Color.Black;
+            this.buttonShareYourLove.Location = new System.Drawing.Point(220, 101);
+            this.buttonShareYourLove.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonShareYourLove.Name = "buttonShareYourLove";
-            this.buttonShareYourLove.Size = new System.Drawing.Size(178, 35);
+            this.buttonShareYourLove.Size = new System.Drawing.Size(158, 28);
             this.buttonShareYourLove.TabIndex = 4;
             this.buttonShareYourLove.Text = "Share Your Love!";
-            this.buttonShareYourLove.UseVisualStyleBackColor = true;
+            this.buttonShareYourLove.UseVisualStyleBackColor = false;
             this.buttonShareYourLove.Click += new System.EventHandler(this.buttonShareYourLove_Click);
             // 
             // listBoxLikedPages
             // 
+            this.listBoxLikedPages.BackColor = System.Drawing.Color.White;
+            this.listBoxLikedPages.ForeColor = System.Drawing.Color.Black;
             this.listBoxLikedPages.FormattingEnabled = true;
-            this.listBoxLikedPages.ItemHeight = 20;
-            this.listBoxLikedPages.Location = new System.Drawing.Point(16, 46);
+            this.listBoxLikedPages.ItemHeight = 16;
+            this.listBoxLikedPages.Location = new System.Drawing.Point(14, 37);
+            this.listBoxLikedPages.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.listBoxLikedPages.Name = "listBoxLikedPages";
-            this.listBoxLikedPages.Size = new System.Drawing.Size(204, 224);
+            this.listBoxLikedPages.Size = new System.Drawing.Size(182, 180);
             this.listBoxLikedPages.TabIndex = 3;
             this.listBoxLikedPages.SelectedIndexChanged += new System.EventHandler(this.listBoxLikedPages_SelectedIndexChanged);
             // 
             // FormLikedPages
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(442, 305);
+            this.ClientSize = new System.Drawing.Size(393, 244);
             this.Controls.Add(this.buttonShareYourLove);
             this.Controls.Add(this.listBoxLikedPages);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FormLikedPages";
             this.Text = "Facebook - Liked Pages";
             this.ResumeLayout(false);

@@ -39,6 +39,8 @@
             // 
             // listBoxSelectedFromAlbum
             // 
+            this.listBoxSelectedFromAlbum.BackColor = System.Drawing.Color.White;
+            this.listBoxSelectedFromAlbum.ForeColor = System.Drawing.Color.Black;
             this.listBoxSelectedFromAlbum.FormattingEnabled = true;
             this.listBoxSelectedFromAlbum.ItemHeight = 16;
             this.listBoxSelectedFromAlbum.Location = new System.Drawing.Point(23, 26);
@@ -50,6 +52,8 @@
             // 
             // listBoxSelectedPicture
             // 
+            this.listBoxSelectedPicture.BackColor = System.Drawing.Color.White;
+            this.listBoxSelectedPicture.ForeColor = System.Drawing.Color.Black;
             this.listBoxSelectedPicture.FormattingEnabled = true;
             this.listBoxSelectedPicture.ItemHeight = 16;
             this.listBoxSelectedPicture.Location = new System.Drawing.Point(200, 26);
@@ -61,6 +65,8 @@
             // 
             // pictureBoxShowAlbumPictureAdd
             // 
+            this.pictureBoxShowAlbumPictureAdd.BackColor = System.Drawing.Color.White;
+            this.pictureBoxShowAlbumPictureAdd.ForeColor = System.Drawing.Color.Black;
             this.pictureBoxShowAlbumPictureAdd.Location = new System.Drawing.Point(73, 198);
             this.pictureBoxShowAlbumPictureAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBoxShowAlbumPictureAdd.Name = "pictureBoxShowAlbumPictureAdd";
@@ -70,7 +76,9 @@
             // 
             // ListBoxSelectedToAlbum
             // 
+            this.ListBoxSelectedToAlbum.BackColor = System.Drawing.Color.White;
             this.ListBoxSelectedToAlbum.Enabled = false;
+            this.ListBoxSelectedToAlbum.ForeColor = System.Drawing.Color.Black;
             this.ListBoxSelectedToAlbum.FormattingEnabled = true;
             this.ListBoxSelectedToAlbum.ItemHeight = 16;
             this.ListBoxSelectedToAlbum.Location = new System.Drawing.Point(372, 26);
@@ -82,14 +90,16 @@
             // 
             // buttonAddPictureTo
             // 
+            this.buttonAddPictureTo.BackColor = System.Drawing.Color.White;
             this.buttonAddPictureTo.Enabled = false;
+            this.buttonAddPictureTo.ForeColor = System.Drawing.Color.Black;
             this.buttonAddPictureTo.Location = new System.Drawing.Point(372, 198);
             this.buttonAddPictureTo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonAddPictureTo.Name = "buttonAddPictureTo";
             this.buttonAddPictureTo.Size = new System.Drawing.Size(111, 41);
             this.buttonAddPictureTo.TabIndex = 6;
             this.buttonAddPictureTo.Text = "Add Picture";
-            this.buttonAddPictureTo.UseVisualStyleBackColor = true;
+            this.buttonAddPictureTo.UseVisualStyleBackColor = false;
             this.buttonAddPictureTo.Click += new System.EventHandler(this.buttonAddPictureTo_Click);
             // 
             // FormAlbumCrosspost
