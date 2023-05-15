@@ -24,14 +24,14 @@ namespace BasicFacebookFeatures
 
         public void FetchUserGroupsToListBox(ListBox i_ListBox)
         {
-            i_ListBox.Items.Clear();
-            i_ListBox.DisplayMember = "Name";
+            i_ListBox.Invoke(new Action(() => i_ListBox.Items.Clear()));
+            i_ListBox.Invoke(new Action(() => i_ListBox.DisplayMember = "Name"));
 
             try
             {
                 foreach (Group group in r_User.Groups)
                 {
-                    i_ListBox.Items.Add(group);
+                    i_ListBox.Invoke(new Action(() => i_ListBox.Items.Add(group)));
                 }
             }
             catch (Exception ex)
@@ -39,7 +39,7 @@ namespace BasicFacebookFeatures
                 MessageBox.Show(ex.Message);
             }
 
-            if (i_ListBox.Items.Count == 0)
+            if ((int)i_ListBox.Invoke(new Func<int>(() => i_ListBox.Items.Count)) == 0)
             {
                 MessageBox.Show("No groups to retrieve :(");
             }

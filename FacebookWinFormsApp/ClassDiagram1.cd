@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="BasicFacebookFeatures.FormMain">
-    <Position X="0.5" Y="0.5" Width="1.5" />
+    <Position X="0.5" Y="3.5" Width="2.5" />
     <Members>
       <Field Name="buttonAlbumPhotos" Hidden="true" />
       <Field Name="buttonCrossPost" Hidden="true" />
@@ -16,12 +16,12 @@
       <Method Name="InitializeComponent" Hidden="true" />
     </Members>
     <TypeIdentifier>
-      <HashCode>AEAIJCAAAiAABASBAACAAAwSAAAgQoAIAAAAAAQoAAg=</HashCode>
+      <HashCode>AEAIJCAAAiAABAShAACAAAwSAAAhQoAAAAAAAAQoAAg=</HashCode>
       <FileName>FormMain.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BasicFacebookFeatures.Subforms.FormAlbumCrosspost">
-    <Position X="2.5" Y="0.5" Width="1.5" />
+    <Position X="6.75" Y="7.5" Width="1.5" />
     <Members>
       <Field Name="buttonAddPictureTo" Hidden="true" />
       <Field Name="components" Hidden="true" />
@@ -33,7 +33,7 @@
       <Field Name="pictureBoxShowAlbumPictureAdd" Hidden="true" />
     </Members>
     <TypeIdentifier>
-      <HashCode>AAAACCAAACABAhCAAgiAABAiAAAAAAAAAAAAAABBAAA=</HashCode>
+      <HashCode>AAgACCAAACABAhCAAgCAABAiAAAAAAAAAAAAAABBAAA=</HashCode>
       <FileName>Subforms\FormAlbumCrosspost.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -41,7 +41,7 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="BasicFacebookFeatures.Subforms.FormAlbumView">
-    <Position X="6" Y="0.5" Width="1.5" />
+    <Position X="0.5" Y="8" Width="1.5" />
     <Members>
       <Field Name="components" Hidden="true" />
       <Field Name="listBoxAlbumsShow" Hidden="true" />
@@ -58,7 +58,7 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="BasicFacebookFeatures.Subforms.FormGroupCrossPost">
-    <Position X="8" Y="0.5" Width="1.5" />
+    <Position X="6.75" Y="0.5" Width="3" />
     <Members>
       <Field Name="buttonCrossPost" Hidden="true" />
       <Field Name="components" Hidden="true" />
@@ -75,7 +75,7 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="BasicFacebookFeatures.Subforms.FormGroupView">
-    <Position X="12.25" Y="0.5" Width="1.5" />
+    <Position X="0.5" Y="0.75" Width="1.5" />
     <Members>
       <Field Name="buttonPost" Hidden="true" />
       <Field Name="components" Hidden="true" />
@@ -94,7 +94,7 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="BasicFacebookFeatures.Subforms.FormLikedPages">
-    <Position X="3" Y="3.25" Width="1.5" />
+    <Position X="6" Y="4.5" Width="3" />
     <Members>
       <Field Name="buttonShareYourLove" Hidden="true" />
       <Field Name="components" Hidden="true" />
@@ -108,47 +108,90 @@
     </TypeIdentifier>
   </Class>
   <Class Name="BasicFacebookFeatures.Subforms.FormUserDetails">
-    <Position X="5.5" Y="3.75" Width="1.5" />
+    <Position X="3.75" Y="3.75" Width="2" />
     <Members>
       <Field Name="components" Hidden="true" />
       <Method Name="Dispose" Hidden="true" />
       <Method Name="InitializeComponent" Hidden="true" />
       <Field Name="labelAge" Hidden="true" />
       <Field Name="labelAgeText" Hidden="true" />
-      <Field Name="labelBirthday" Hidden="true" />
-      <Field Name="labelBirthDayText" Hidden="true" />
-      <Field Name="labelEmail" Hidden="true" />
-      <Field Name="labelEmailText" Hidden="true" />
       <Field Name="labelFriendCount" Hidden="true" />
       <Field Name="labelFriendCountText" Hidden="true" />
       <Field Name="labelGender" Hidden="true" />
       <Field Name="labelGenderText" Hidden="true" />
-      <Field Name="labelLocation" Hidden="true" />
-      <Field Name="labelLocationText" Hidden="true" />
       <Field Name="labelRalashionshipText" Hidden="true" />
       <Field Name="labelRelashionship" Hidden="true" />
-      <Field Name="labelUserName" Hidden="true" />
       <Field Name="labelWelcomBack" Hidden="true" />
-      <Field Name="pictureBoxProfile" Hidden="true" />
     </Members>
     <TypeIdentifier>
-      <HashCode>AgAAIEAAECBBAEBAAgCACAgCAQIAEAFIAAAAAgAAIAA=</HashCode>
+      <HashCode>AiAAIEAAECABAAAACgCACAACCAAQkAEJAIAAghAAAAA=</HashCode>
       <FileName>Subforms\FormUserDetails.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BasicFacebookFeatures.AlbumManager">
-    <Position X="4.25" Y="0.75" Width="1.5" />
+    <Position X="3.75" Y="8" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAQAAgAAAAAAAAAAAAAAAQAAAAAAAAAEgAAAAAAAAA=</HashCode>
-      <FileName>AlbumManager.cs</FileName>
+      <FileName>AdditionalClasses\AlbumManager.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BasicFacebookFeatures.GroupManager">
-    <Position X="10.25" Y="0.75" Width="1.5" />
+    <Position X="3.75" Y="0.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AgBAAAAAAAAAAAAAAAAEAAAAAQAAAAAAAgAAAAAAAAg=</HashCode>
-      <FileName>GroupManager.cs</FileName>
+      <FileName>AdditionalClasses\GroupManager.cs</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="BasicFacebookFeatures.FormFactory">
+    <Position X="9.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AdditionalClasses\FormFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BasicFacebookFeatures.AppSettings">
+    <Position X="14" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAgAAEAgAAAAAAAAAwEAAAAAAAAAAA=</HashCode>
+      <FileName>AppSettings.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BasicFacebookFeatures.NightMode" BaseTypeListCollapsed="true">
+    <Position X="13" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAACAAAAACAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>NightMode.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.211" Collapsed="true" />
+  </Class>
+  <Class Name="BasicFacebookFeatures.DayMode" BaseTypeListCollapsed="true">
+    <Position X="14.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAACAAAAACAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DayMode.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="1.16" Collapsed="true" />
+  </Class>
+  <Class Name="BasicFacebookFeatures.UserSession">
+    <Position X="12" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEFAAAAAAAAAAAgAgAIAEAAAAAAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>AdditionalClasses\UserSession.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="BasicFacebookFeatures.IStyleFactory">
+    <Position X="13.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAACAAAAACAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IStyleFactory.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Delegate Name="BasicFacebookFeatures.OnStyleChanged">
+    <Position X="13.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AppSettings.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

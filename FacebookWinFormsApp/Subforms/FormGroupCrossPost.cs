@@ -22,8 +22,10 @@ namespace BasicFacebookFeatures.Subforms
 
         private void OnShown(object sender, EventArgs e)
         {
-           // new Thread(() => r_GroupManager.FetchUserGroupsToListBox(listBoxGroupsFrom)).Start();
-           // listBoxGroupsFrom.Invoke(new Action(() => r_GroupManager.FetchUserGroupsToListBox(listBoxGroupsFrom)));
+            new Thread(() => r_GroupManager.FetchUserGroupsToListBox(listBoxGroupsFrom)).Start();
+            //listBoxGroupsFrom.Invoke(new Action(() => r_GroupManager.FetchUserGroupsToListBox(listBoxGroupsFrom)));
+            new Thread(() =>r_GroupManager.FetchUserGroupsToListBox(listBoxGroupsTo)).Start();
+
             listBoxGroupsTo.Items.AddRange(listBoxGroupsFrom.Items);
         }
 

@@ -92,6 +92,7 @@
     <Compile Include="AdditionalClasses\AlbumManager.cs" />
     <Compile Include="AdditionalClasses\FormFactory.cs" />
     <Compile Include="AppSettings.cs" />
+    <Compile Include="Class1.cs" />
     <Compile Include="FormMain.cs">
       <SubType>Form</SubType>
     </Compile>
