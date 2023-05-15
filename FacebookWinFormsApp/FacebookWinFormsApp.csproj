@@ -90,8 +90,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AdditionalClasses\AlbumManager.cs" />
-    <Compile Include="AdditionalClasses\FormFactory.cs" />
-    <Compile Include="AppSettings.cs" />
+    <Compile Include="DesignPatternsExample\Factory Method\FormFactory.cs" />
+    <Compile Include="DesignPatternsExample\Proxy\AppSettings.cs" />
+    <Compile Include="Class1.cs" />
     <Compile Include="FormMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,13 +100,13 @@
       <DependentUpon>FormMain.cs</DependentUpon>
     </Compile>
     <Compile Include="AdditionalClasses\GroupManager.cs" />
-    <Compile Include="AdditionalClasses\Program.cs" />
-    <Compile Include="FormWithSettingsProxy.cs">
+    <Compile Include="Program.cs" />
+    <Compile Include="DesignPatternsExample\Proxy\FormWithSettingsProxy.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="IStyleFactory.cs" />
-    <Compile Include="DayMode.cs" />
-    <Compile Include="NightMode.cs" />
+    <Compile Include="DesignPatternsExample\Abstract Factory\IStyleFactory.cs" />
+    <Compile Include="DesignPatternsExample\Abstract Factory\DayMode.cs" />
+    <Compile Include="DesignPatternsExample\Abstract Factory\NightMode.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Subforms\FormAlbumCrosspost.cs">
       <SubType>Form</SubType>
@@ -147,7 +148,7 @@
     <EmbeddedResource Include="FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormWithSettingsProxy.resx">
+    <EmbeddedResource Include="DesignPatternsExample\Proxy\FormWithSettingsProxy.resx">
       <DependentUpon>FormWithSettingsProxy.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -177,9 +178,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Subforms\FormAlbumView.resx">
       <DependentUpon>FormAlbumView.cs</DependentUpon>
-    </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
     <None Include="ClassDiagram.cd" />
     <None Include="FacebookWrapper.ObjectModel.City.datasource" />
+    <None Include="FacebookWrapper.ObjectModel.User2.datasource" />
     <None Include="FacebookWrapper.ObjectModel.User2.datasource" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
