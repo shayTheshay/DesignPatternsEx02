@@ -92,7 +92,6 @@
     <Compile Include="AdditionalClasses\AlbumManager.cs" />
     <Compile Include="AdditionalClasses\FormFactory.cs" />
     <Compile Include="AppSettings.cs" />
-    <Compile Include="Class1.cs" />
     <Compile Include="FormMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -179,7 +178,7 @@
     <EmbeddedResource Include="Subforms\FormAlbumView.resx">
       <DependentUpon>FormAlbumView.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram.cd" />
     <None Include="FacebookWrapper.ObjectModel.City.datasource" />
     <None Include="FacebookWrapper.ObjectModel.User2.datasource" />
     <None Include="packages.config" />
